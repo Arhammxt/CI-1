@@ -414,7 +414,7 @@ TELEGRAM_TOOLCHAIN_VER=$(cat ${KERNEL}/out/include/generated/compile.h | grep LI
 
 # Telegram Bot Service || Compiling Notification
 function bot_template() {
-curl -s -X POST https://api.telegram.org/bot${TELEGRAM_BOT_ID}/sendMessage -d chat_id=${TELEGRAM_GROUP_ID} -d "parse_mode=HTML" -d text="$(
+curl -s -X POST https://api.telegram.org/bot1853505389:AAEEWWrIJZ7enNBUWv9_T0SC4zSCu0oHheo/sendMessage -d chat_id=-1001524264358 -d "parse_mode=HTML" -d text="$(
 	for POST in "${@}";
 		do
 			echo "${POST}"
